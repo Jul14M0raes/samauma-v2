@@ -8,6 +8,7 @@
    O que não for endereço conhecido vira um 404 de verdade, com caminho de volta. */
 
 import { useEffect, useState } from 'react';
+import { CAMINHO_BASE } from '@/lib/caminhos';
 import { DetalheDemanda } from '@/components/demanda/DetalheDemanda';
 import { CabecalhoPublico } from '@/components/layout/CabecalhoPublico';
 import { Voltar } from '@/components/ui/Basicos';
@@ -27,7 +28,7 @@ type Destino =
 function lerEndereco(): Destino {
   if (typeof window === 'undefined') return { tipo: 'nada' };
   const partes = window.location.pathname
-    .replace(/^\/samauma/, '')
+    .slice(window.location.pathname.startsWith(CAMINHO_BASE) ? CAMINHO_BASE.length : 0)
     .split('/')
     .filter(Boolean);
 

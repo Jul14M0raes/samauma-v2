@@ -2068,7 +2068,7 @@ body.somente-comprovante .app { display: none; }
      névoa. Escurecer de leve deixa a cidade aparecer e ainda joga o cartão
      branco para a frente. */
   background: linear-gradient(rgba(17, 43, 32, .34), rgba(17, 43, 32, .58)),
-              url('/samauma/porto-velho.jpg') center 62% / cover no-repeat;
+              url('/samauma-v2/porto-velho.jpg') center 62% / cover no-repeat;
 }
 
 .login-caixa {

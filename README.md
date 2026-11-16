@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Depois abra `http://localhost:3000/samauma`.
+Depois abra `http://localhost:3000/samauma-v2/`.
 
 Em Windows com política de Controle de Aplicativo (o bloqueio do arquivo nativo
 `@next/swc-win32-x64-msvc`), o Turbopack não sobe. Use o modo webpack:
@@ -58,7 +58,7 @@ docs/           documentação funcional (fonte oficial) e contratos de dados
 
 ## Publicação
 
-`next.config.ts` usa `output: "export"` com `basePath: "/samauma"`. A cada push no `main`, o
+`next.config.ts` usa `output: "export"` com `basePath: "/samauma-v2"`. A cada push no `main`, o
 workflow `.github/workflows/publicar.yml` gera `out/` e publica no GitHub Pages.
 
 ## Aviso
